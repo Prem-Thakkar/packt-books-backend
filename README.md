@@ -13,10 +13,10 @@ https://www.linkedin.com/in/prem-thakkar/
 
 ## Language 🔨
 
-Language: PHP with version 8.1.10
+PHP with version 8.1.10
 ## Framework 🔨
 
-Framework: Laravel with version 10.7.1
+Laravel with version 10.7.1
 ## Database 💾
  
 Mysql with version 8.0.30
