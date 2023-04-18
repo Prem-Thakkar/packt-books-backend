@@ -51,3 +51,86 @@ Mysql with version 8.0.30
 ```bash
   php artisan key:generate
 ```
+
+## User API Reference 👨
+
+#### Books Listing
+
+```http
+  GET /api/books
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `page`      | `integer` | **Required**. Which page to return |
+| `rowsPerPage`      | `integer` | **Required**. Records per page |
+| `sortBy`      | `string` | **Required**. Order the records with selected column |
+| `sortType`      | `string` | **Required**. Direction of the order |
+| `search[title]`      | `string` | **Optional**. Filter records matching specified Title |
+| `search[author]`      | `string` | **Optional**. Filter records matching specified Author |
+| `search[published_on]`      | `date` | **Optional**. Filter records matching specified Published On Date|
+| `search[isbn]`      | `integer` | **Optional**. Filter records matching specified ISBN |
+| `search[genre]`      | `string` | **Optional**. Filter records matching specified Genre |
+
+#### Get a book details
+
+```http
+  GET /api/books/{bookById}
+```
+```{bookById}``` - Book Id 
+## Admin Api Refrence 👨‍✈️
+
+#### Login
+
+```http
+  GET /api/admin/login
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `email` | `string` | **Required**. |
+| `password` | `string` | **Required**. |
+
+
+
+#### Add a new book
+
+```http
+  POST api/admin/books
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `title`      | `string` | **Required**. Title of the book |
+| `author`      | `string` | **Required**. Author of the book |
+| `published_on`      | `date` | **Required**.  Published On Date of the book|
+| `publisher`      | `string` | **Required**.  Publisher of the book|
+| `isbn`      | `integer` | **Required**. ISBN of the book |
+| `genre`      | `string` | **Required**. Genre of the book |
+| `description`      | `string` | **Required**. Description of the book |
+| `image`      | `string` | **Required**. Image URL of the book |
+
+#### Update a book
+
+```http
+  PUT api/admin/books/{bookById}
+```
+```{bookById}``` - Book Id
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `title`      | `string` | **Required**. Title of the book |
+| `author`      | `string` | **Required**. Author of the book |
+| `published_on`      | `date` | **Required**.  Published On Date of the book|
+| `publisher`      | `string` | **Required**.  Publisher of the book|
+| `isbn`      | `integer` | **Required**. ISBN of the book |
+| `genre`      | `string` | **Required**. Genre of the book |
+| `description`      | `string` | **Required**. Description of the book |
+| `image`      | `string` | **Required**. Image URL of the book |
+
+#### Delete a book
+
+```http
+  DELETE /api/admin/books/{bookById}
+```
+```{bookById}``` - Book Id
