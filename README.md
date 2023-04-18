@@ -55,7 +55,7 @@ Mysql with version 8.0.30
   php artisan key:generate
 ```
 
-## User API Reference 👨
+## Customer API Reference 👨
 
 #### Books Listing
 
