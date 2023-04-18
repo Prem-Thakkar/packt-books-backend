@@ -24,7 +24,7 @@ Mysql with version 8.0.30
 
 * Solid Principles
 * Laravel Service Container for manual dependancy injection
-* Service architecture (Achieved thin controller and fast service files with this)
+* Service architecture (Achieved thin controller and fat service files with this)
 * Indexing for Improving Database Perfomance 
 ## Other Concepts Used
 
