@@ -4,9 +4,10 @@
 Backend Apis for books 📚
 
 
-## Artisan Profile 👨‍💻
+## Artisan Profiles 👨‍💻
 
 https://github.com/prem-thakkar/
+https://www.linkedin.com/in/prem-thakkar/
 
 ## Language 🔨
 
